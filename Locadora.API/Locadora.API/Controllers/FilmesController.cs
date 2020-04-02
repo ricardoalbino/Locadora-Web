@@ -8,17 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Locadora.API.Controllers
 {
-    //https://localhost:44353/api/locadora/Usuarios
-
     [ApiController]
     [Route("api/locadora/[controller]")]
-    public class FikmesController : Controller
+    public class FilmesController : Controller
     {
-
-
         private readonly IFilmeRepository _filmeRepository;
 
-        public FikmesController(IFilmeRepository filmeRepository)
+        public FilmesController(IFilmeRepository filmeRepository)
         {
 
             _filmeRepository = filmeRepository;
@@ -27,13 +23,11 @@ namespace Locadora.API.Controllers
         [HttpGet]
         public async Task<IEnumerable<Filme>> ObterTodos()
         {
-
             var usuario = await _filmeRepository.ObterTodos();
-
-
 
             return usuario;
         }
+
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<Filme>> ObterPorId(Guid id)
@@ -46,12 +40,12 @@ namespace Locadora.API.Controllers
             return filme;
         }
 
-
-        [HttpGet]
+        //https://localhost:44353/api/locadora/Filmes/filtrar
+        [HttpGet("filtrar/{filtro}")]
         public async Task<IEnumerable<Filme>> ObterFilmePorGeneroOuDataOuNome(string genero, DateTime? dataLançamento)
         {
-            var filme = await _filmeRepository.ObterFilmePorGenero(genero,dataLançamento);
-            
+            var filme = await _filmeRepository.ObterFilmePorGenero(genero, dataLançamento);
+
             if (filme == null) NotFound();
 
 
@@ -83,7 +77,6 @@ namespace Locadora.API.Controllers
             if (resultado == null) BadRequest();
 
             return Ok(resultado);
-
 
         }
 

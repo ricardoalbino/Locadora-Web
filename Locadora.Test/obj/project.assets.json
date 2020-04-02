@@ -8942,11 +8942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.Test\\Locadora.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.Test\\Locadora.Test.csproj",
       "projectName": "Locadora.Test",
-      "projectPath": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.Test\\Locadora.Test.csproj",
+      "projectPath": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.Test\\Locadora.Test.csproj",
       "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.Test\\obj\\",
+      "outputPath": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8965,14 +8965,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.App\\Locadora.App.csproj": {
-              "projectPath": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.App\\Locadora.App.csproj"
+            "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.App\\Locadora.App.csproj": {
+              "projectPath": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.App\\Locadora.App.csproj"
             },
-            "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.Domain\\Locadora.Domain.csproj": {
-              "projectPath": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadora.Domain\\Locadora.Domain.csproj"
+            "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.Domain\\Locadora.Domain.csproj": {
+              "projectPath": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadora.Domain\\Locadora.Domain.csproj"
             },
-            "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadore.Infra\\Locadore.Infra.csproj": {
-              "projectPath": "C:\\Users\\Ricardo\\Desktop\\Projeto\\src\\Locadora\\Locadore.Infra\\Locadore.Infra.csproj"
+            "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadore.Infra\\Locadore.Infra.csproj": {
+              "projectPath": "C:\\Users\\Ricardo\\Source\\Repos\\Locadora-Web\\Locadore.Infra\\Locadore.Infra.csproj"
             }
           }
         }

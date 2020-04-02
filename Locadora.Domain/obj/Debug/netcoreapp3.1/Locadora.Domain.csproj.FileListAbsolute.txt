@@ -6,3 +6,11 @@ C:\Users\Ricardo\Desktop\Projeto\src\Locadora\Locadora.Domain\obj\Debug\netcorea
 C:\Users\Ricardo\Desktop\Projeto\src\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.dll
 C:\Users\Ricardo\Desktop\Projeto\src\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.pdb
 C:\Users\Ricardo\Desktop\Projeto\src\Locadora\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.csprojAssemblyReference.cache
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.deps.json
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.dll
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\bin\Debug\netcoreapp3.1\Locadora.Domain.pdb
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.csprojAssemblyReference.cache
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.AssemblyInfoInputs.cache
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.AssemblyInfo.cs
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.dll
+C:\Users\Ricardo\Source\Repos\Locadora-Web\Locadora.Domain\obj\Debug\netcoreapp3.1\Locadora.Domain.pdb
