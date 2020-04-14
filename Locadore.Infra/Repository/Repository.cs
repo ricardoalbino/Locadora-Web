@@ -55,7 +55,9 @@ namespace Locadora.Infra.Repository
 
         public async Task<TEntity> ObterPorId(Guid id)
         {
-            return await _dbSet.FindAsync(id);
+
+             return await _dbSet.FindAsync(id);
+          
         }
 
         public async Task<List<TEntity>> ObterTodos()

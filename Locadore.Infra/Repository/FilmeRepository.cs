@@ -45,17 +45,18 @@ namespace Locadora.Infra.Repository
              .Where(f => f.DataLançamento == data).ToListAsync();
         }
 
-        public async  Task<IEnumerable<Filme>> ObterFilmePorGenero(string genero, DateTime? dataLançamento)
+        public async  Task<IEnumerable<Filme>> ObterFilmePorGenero(string genero)
         {
             return await _dataContext.Filmes.AsNoTracking()
-              .Where(f => f.Genero == genero ||  f.DataLançamento ==  dataLançamento ).ToListAsync();
+              .Where(f => f.Genero == genero  ).ToListAsync();
         }
 
-        //    public async Task<IEnumerable<Filme>> ObterFilmePorGenero(string genero)
-        //    {
-        //        return await _dataContext.Filmes.AsNoTracking()
-        //        .Where(f => f.Genero == genero ).ToListAsync();
-        //    }
-        //}
+        public async Task<IEnumerable<Filme>> ObterFilmePorGeneroEDataDeLancamento(string genero, DateTime? data)
+        {
+            return await _dataContext.Filmes.AsNoTracking()
+             .Where(f => f.Genero == genero || f.DataLançamento  == data).ToListAsync();
+        }
+
+       
     }
 }

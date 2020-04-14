@@ -39,6 +39,8 @@ namespace Locadora.API
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IFilmeRepository, FilmeRepository>();
 
+
+            //Configuração Cors
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
@@ -58,6 +60,8 @@ namespace Locadora.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //Configurações
             app.UseCors(options => options.AllowAnyOrigin());
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("v1/swagger.json", "API name"); });

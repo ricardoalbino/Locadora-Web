@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Domain", "..\Locad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadore.Infra", "..\Locadore.Infra\Locadore.Infra.csproj", "{E41E4640-F3B9-4A06-8A1F-9B47DFEE8BB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Principal", "Principal\Principal.csproj", "{299BE8B6-BF42-4D27-980F-0E6524E0836C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{E41E4640-F3B9-4A06-8A1F-9B47DFEE8BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E41E4640-F3B9-4A06-8A1F-9B47DFEE8BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E41E4640-F3B9-4A06-8A1F-9B47DFEE8BB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{299BE8B6-BF42-4D27-980F-0E6524E0836C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{299BE8B6-BF42-4D27-980F-0E6524E0836C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{299BE8B6-BF42-4D27-980F-0E6524E0836C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{299BE8B6-BF42-4D27-980F-0E6524E0836C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

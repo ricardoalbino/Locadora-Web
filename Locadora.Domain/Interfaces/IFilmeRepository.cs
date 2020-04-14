@@ -9,12 +9,12 @@ namespace Locadora.Domain.Interfaces
     {
         Task<IEnumerable<Filme>> ObterFilmePorDataDeLancamento(DateTime data);
 
-        Task<IEnumerable<Filme>> ObterFilmePorGenero(string genero, DateTime? dataLançamento);
+        Task<IEnumerable<Filme>> ObterFilmePorGenero(string genero);
 
         Task<IEnumerable<Filme>> ObterFilmeComUsuario();
 
 
-
+        Task<IEnumerable<Filme>> ObterFilmePorGeneroEDataDeLancamento(string genero,DateTime? data);
 
 
     }

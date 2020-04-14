@@ -40,15 +40,25 @@ namespace Locadora.API.Controllers
             return filme;
         }
 
-        //https://localhost:44353/api/locadora/Filmes/filtrar
-        [HttpGet("filtrar/{filtro}")]
-        public async Task<IEnumerable<Filme>> ObterFilmePorGeneroOuDataOuNome(string genero, DateTime? dataLançamento)
+
+        ////https://localhost:44353/api/locadora/Filmes/GetPor
+        //[HttpGet, Route("GetPor/{genero}")]
+        //public string ObterFilmePorGeneroOuDataOuNome2(string genero)
+        //{
+
+        //    return "GetPor Ok!" + genero;
+        //}
+
+        //https://localhost:44353/api/locadora/Filmes/GetPor/
+        [HttpGet,Route("GetPor/{genero}/{dataLancamento:DateTime}")]
+       
+        public async Task<IEnumerable<Filme>> ObterFilmePorGeneroOuDataOuNome(string genero, DateTime? dataLancamento)
         {
-            var filme = await _filmeRepository.ObterFilmePorGenero(genero, dataLançamento);
+            var filme = await _filmeRepository.ObterFilmePorGeneroEDataDeLancamento(genero, dataLancamento);
 
             if (filme == null) NotFound();
 
-
+            //2012-10-23 09:23
             return filme;
         }
         // POST: Usuario/Create
@@ -66,23 +76,10 @@ namespace Locadora.API.Controllers
         }
 
 
-        //https://localhost:44353/api/locadora/Usuarios/edit/5
-        [HttpPut("{id:Guid}")]
-        public ActionResult<Usuario> Edit(Guid id, Filme filme)
-        {
-            //if (id != usuario.Id) return BadRequest();
-
-            var resultado = _filmeRepository.Atualizar(filme);
-
-            if (resultado == null) BadRequest();
-
-            return Ok(resultado);
-
-        }
 
 
         //https://localhost:44353/api/locadora/Usuarios/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:Guid}")]
         public ActionResult Delete(Guid id)
         {
             var filme = _filmeRepository.ObterPorId(id);

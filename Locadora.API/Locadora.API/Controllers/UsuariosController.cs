@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 namespace Locadora.API.Controllers
 {
 
-    //https://localhost:44353/api/locadora/Usuarios
+    //  ENDPOINT-BASE https://localhost:44353/api/locadora/Usuarios // + ARGUMENTO  DESEJADO
+
+
     [ApiController]
     [Route("api/locadora/[controller]")]
     public class UsuariosController : Controller
     {
-
 
         private readonly IUsuarioRepository _usuarioRepository;
 
@@ -27,24 +28,24 @@ namespace Locadora.API.Controllers
         [HttpGet]
         public async Task<IEnumerable<Usuario>> ObterTodos()
         {
+           
+                var usuario = await _usuarioRepository.ObterTodos();
 
-            var usuario = await _usuarioRepository.ObterTodos();
-
-
-
-            return usuario;
+                return usuario;
+           
         }
 
-        [HttpGet("{id:guid}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> ObterPorId(Guid id)
         {
-            var usuario = await _usuarioRepository.ObterPorId(id);
 
-            if (usuario == null) NotFound();
+            var usuario = await _usuarioRepository.ObterPorId(id);
 
 
             return usuario;
+
         }
+           
 
         // POST: Usuario/Create
         [HttpPost]
@@ -61,11 +62,10 @@ namespace Locadora.API.Controllers
         }
 
 
-        //https://localhost:44353/api/locadora/Usuarios/edit/5
         [HttpPut("{id:Guid}")]
         public ActionResult<Usuario> Edit(Guid id,Usuario usuario)
         {
-            //if (id != usuario.Id) return BadRequest();
+            if (id != usuario.Id) return BadRequest();
 
             var resultado = _usuarioRepository.Atualizar(usuario);
 
@@ -76,19 +76,18 @@ namespace Locadora.API.Controllers
 
         }
 
-
-        //https://localhost:44353/api/locadora/Usuarios/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:Guid}")]
         public ActionResult Delete(Guid id)
         {
             var usuario = _usuarioRepository.ObterPorId(id);
+
             if (usuario == null) return NotFound();
 
             var result = _usuarioRepository.Remover(id);
 
             if (result == null) return BadRequest();
 
-            return Ok(usuario);
+            return Ok(result);
         }
     }
 }
